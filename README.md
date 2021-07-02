@@ -1,2 +1,2 @@
-# git-learning
+# gitassignments
 This is to learn git
