@@ -1,0 +1,6 @@
+p{
+    border: 1px solid red;
+    outline-style: dotted;
+    outline-color: green;
+    max-width: 35%;
+}
