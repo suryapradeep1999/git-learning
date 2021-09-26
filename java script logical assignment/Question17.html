@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question17</title>
+    </head>
+    <body>
+        <script>
+            function RightRotate(a, b, c) {
+                c = c % b;
+                for (i=0; i<b; i++) {
+                    if (i<c) {
+                        document.write(a[b+i-c] + " ");
+		            } else {
+                        document.write((a[i-c]) + " ");
+		            }
+	            }
+                document.write("<br>");
+            }
+            let Array = [1, 2, 3, 4, 5, 6];
+            let B = Array.length;
+            let C = 4;
+            RightRotate(Array, B, C)
+        </script>
+    </body>
+</html>

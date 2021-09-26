@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question4</title>
+    </head>
+    <body>
+        <h1> Fraction of Heads</h1>
+        Enter no.of flips: <input type="number" id="num" name="num">
+        <button onclick="headsRatio()">Calculate</button>
+        <br>
+        <p>Output: <span id="output"></span></p>
+        <script>
+        function headsRatio() {
+        num = document.getElementById('num').value;
+        document.getElementById("output").innerHTML = (numHeads(num) / num);
+        }
+        function numHeads(num) {
+            var numOfHeads = 0;
+            for (var i = 0; i < num; i++) {
+                if (flipCoin() == "Heads") {
+                    numOfHeads++;
+                }
+            }
+            return(numOfHeads);
+        }
+        function flipCoin() {
+            if (Math.random() < 0.5) {
+                return ("Heads");
+            } else {
+                return ("Tails");
+            }
+        }
+        </script>
+    </body>
+</html>

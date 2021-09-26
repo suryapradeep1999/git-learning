@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question13</title>
+    </head>
+    <body>
+        <script>
+            function sum(array) {
+                let sum = 0;
+                for(i=0; i<array.length; i++) {
+                    sum += array[i];
+                }
+                return sum;                
+            }
+            function whilesum(array) {
+                var j = array.length-1;
+                var k = 0;
+                while(j != -1) {
+                    k = k+array[j];
+                    j--;
+                }
+                return k; 
+            }
+            function dowhile(array) {
+                var l = array.length-1;
+                var m = 0;
+                do {
+                    m = m+array[l];
+                    l++;
+                }while(l != -1)
+                return m;
+            }
+            let array = [49, 99, 149,199];
+            document.write("sum of the elements in an array using for loop: " + sum(array) + "<br>");
+            document.write("sum of the elements in an array using while loop: " + sum(array) + "<br>");
+            document.write("sum of the elements in an array using dowhile loop: " + sum(array));
+        </script>
+    </body>
+</html>
